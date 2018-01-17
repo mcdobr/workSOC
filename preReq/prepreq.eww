@@ -2,7 +2,7 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\prereq.ewp</path>
+    <path>$WS_DIR$\..\genFreqWithWD\genFreqWithWD.ewp</path>
   </project>
   <batchBuild/>
 </workspace>
