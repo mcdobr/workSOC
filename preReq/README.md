@@ -1,4 +1,4 @@
-#Funcții ajutătoare pentru examenul de soc
+# Funcții ajutătoare pentru examenul de soc
 
 USART 				- implementat
 USART formatting 	- implementat

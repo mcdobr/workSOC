@@ -1,3 +1,3 @@
-#workSOC
+# workSOC
 
-Repo-ul ăsta îs exerciții lucrate înainte de examenul la SOC.
+Repo-ul ăsta are exercițiile lucrate de mine înainte de examenul la SOC.
