@@ -4,6 +4,9 @@
   <project>
     <path>$WS_DIR$\genFreqWithWD.ewp</path>
   </project>
+  <project>
+    <path>$WS_DIR$\..\timpUltimulReset\timpultimulreset.ewp</path>
+  </project>
   <batchBuild/>
 </workspace>
 
