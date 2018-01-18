@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=1392147779
+Checksum=679359684
 [CodeCoverage]
 Enabled=_ 0
 [CallStack]
@@ -22,13 +22,6 @@ Mode=1
 Graph=0
 Symbiont=0
 Exclusions=
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [CallStackLog]
 Enabled=0
 [CallStackStripe]
@@ -42,9 +35,19 @@ ShowTimeSum=1
 [Breakpoints2]
 Bp0=_ 1 "STD_CODE2" "{$PROJ_DIR$\print.c}.32.3" 0 0 1 "" 0 ""
 Count=1
-[Aliases]
-Count=0
-SuppressDialog=0
 [Trace1]
 Enabled=0
 ShowSource=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\mainpoint.c}.28.3" 1 0 0 0 "" 0 ""
+Count=1
+[Aliases]
+Count=0
+SuppressDialog=0

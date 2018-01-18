@@ -2,70 +2,98 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>1110668541</fileChecksum>
+  <fileChecksum>2689592787</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\mainpoint.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mainpoint.r90</file>
+      <file>$PROJ_DIR$\mainpoint.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\arm\doc\infocenter\index.ENU.html</file>
+      <file>$TOOLKIT_DIR$\doc\infocenter\index.ENU.html</file>
       <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom16.inc</file>
       <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul-sf.r90</file>
-      <file>$TOOLKIT_DIR$\src\template\cfgm16.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\iom16.h</file>
-      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
-      <file>$PROJ_DIR$\..\main.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\genFreqWithWD.pbd</file>
       <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\genFreqWithWD.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\iom16.h</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm16.xcl</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
       <file>$PROJ_DIR$\Debug\Exe\genFreqWithWD.d90</file>
       <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\..\watchdogFreq\mainpoint.c</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\Debug\Exe\genFreqWithWD.d90</name>
-      <inputs>
+      <name>[ROOT_NODE]</name>
+      <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 3 1 10 2</file>
+          <file> 16</file>
         </tool>
-      </inputs>
+      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 9</file>
+          <file> 14</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 10</file>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 17 12 11 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mainpoint.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
         </tool>
         <tool>
-          <name>__cstat</name>
-          <file> 14</file>
+          <name>ICCAVR</name>
+          <file> 2</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 0 4 12 5 8</file>
+          <file> 9 17 12 11 6</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 8 12 4 5 0</file>
+          <file> 9 17 12 11 6</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
+      <name>$PROJ_DIR$\Debug\Obj\genFreqWithWD.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\genFreqWithWD.d90</name>
+      <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 11</file>
+          <file> 13 7 2 8</file>
         </tool>
-      </outputs>
+      </inputs>
     </file>
   </configuration>
   <configuration>
@@ -74,6 +102,9 @@
     <forcedrebuild>
       <name>[MULTI_TOOL]</name>
       <tool>XLINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
     </forcedrebuild>
   </configuration>
 </project>

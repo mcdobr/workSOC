@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=331191968
+Checksum=1343247272
 [CodeCoverage]
 Enabled=_ 0
 [Stack]
@@ -22,13 +22,6 @@ Mode=1
 Graph=0
 Symbiont=0
 Exclusions=
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [CallStackLog]
 Enabled=0
 [CallStackStripe]
@@ -41,9 +34,18 @@ SumEnabled=0
 ShowTimeSum=1
 [Breakpoints2]
 Count=0
-[Aliases]
-Count=0
-SuppressDialog=0
 [Trace1]
 Enabled=0
 ShowSource=1
+[Breakpoints]
+Count=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+Count=0
+SuppressDialog=0

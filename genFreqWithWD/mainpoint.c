@@ -16,30 +16,31 @@ int main( void )
   const int PRESCALER = 64;
   
   DDRD |= (1 << PD5);
-  /*TCCR1B |= (1 << CS11) | (1 << CS10);
+  TCCR1B |= (1 << CS11) | (1 << CS10);
   TCNT1 = 0;
-  */
+  
   
   if (state == HIGH) {
     PORTD |= (1 << PD5);
     
     // Trebuie să mai adaug cicli cât pt 1.5 ms cu ajutorul TCNT1
-    //while (TCNT1 < 1000);
+    while (TCNT1 < 837);
     
-    // setez prescaler pt 32.5 ms
+    // imi da 52,61 ms
+    // setez prescaler pt 65 ms
     WDTCR &= ~((1 << WDP2) | (1 << WDP1) | (1 << WDP0));
-    WDTCR |= (1 << WDP0);
-    
+    WDTCR |= (1 << WDP1);
     state = LOW;
   } else {
     PORTD &= ~(1 << PD5);
     
     // Trebuie să mai adaug cicli cât pt 1.0 ms cu ajutorul TCNT1
-    //while (TCNT1 < 750);
+    while (TCNT1 < 378);
     
-    // setez prescaler pt 65 ms
+    // imi da 26,44 ms
+    // setez prescaler pt 32.5 ms
     WDTCR &= ~((1 << WDP2) | (1 << WDP1) | (1 << WDP0));
-    WDTCR |= (1 << WDP1);
+    WDTCR |= (1 << WDP0);
     
     state = HIGH;
   }

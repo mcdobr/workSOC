@@ -2,28 +2,17 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>2691507298</fileChecksum>
+  <fileChecksum>3576973937</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\mainpoint.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\mainpoint.pbi</file>
+      <file>$PROJ_DIR$\main.c</file>
       <file>$TOOLKIT_DIR$\src\template\cfgm16.xcl</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul-sf.r90</file>
       <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
       <file>$PROJ_DIR$\usart.c</file>
-      <file>$PROJ_DIR$\print.c</file>
-      <file>$TOOLKIT_DIR$\inc\iom16.h</file>
-      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
-      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom16.inc</file>
-      <file>$PROJ_DIR$\Debug\Exe\watchdogfreq.d90</file>
-      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
-      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\print.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\usart.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\watchdogfreq.pbd</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
-      <file>$PROJ_DIR$\Debug\Obj\usart.pbi</file>
       <file>$PROJ_DIR$\usart.h</file>
       <file>$PROJ_DIR$\Debug\Obj\print.r90</file>
       <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
@@ -32,32 +21,59 @@
       <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
       <file>$PROJ_DIR$\Debug\Obj\usart.r90</file>
       <file>$PROJ_DIR$\print.h</file>
-      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\print.c</file>
+      <file>$TOOLKIT_DIR$\inc\iom16.h</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom16.inc</file>
+      <file>$PROJ_DIR$\Debug\Exe\watchdogfreq.d90</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\watchdogfreq.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\usart.pbi</file>
+      <file>$PROJ_DIR$\..\genFreqWithWD\mainpoint.c</file>
+      <file>$PROJ_DIR$\mainpoint.c</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\usart.c</name>
+      <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 17</file>
+          <file> 23</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
           <file> 24</file>
         </tool>
+      </outputs>
+      <inputs>
         <tool>
-          <name>__cstat</name>
+          <name>ICCAVR</name>
+          <file> 20 21 16 17 18 7 14</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
           <file> 13</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 7 9 5 10 6 18</file>
+          <file> 7 20 21 16 17 18</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 18 9 10 5 6 7</file>
+          <file> 7 20 21 16 17 18</file>
         </tool>
       </inputs>
     </file>
@@ -66,25 +82,21 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 22</file>
+          <file> 11</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 19</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 11</file>
+          <file> 8</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 7 23 9 25 21 18 5 10 6 20</file>
+          <file> 9 12 10 14 7 20 21 16 17 18</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 20 21 23 25 18 9 10 5 6 7</file>
+          <file> 9 12 10 14 7 20 21 16 17 18</file>
         </tool>
       </inputs>
     </file>
@@ -93,7 +105,35 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 0 2 16 19 24 1</file>
+          <file> 3 5 0 8 13 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\watchdogfreq.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 1 11 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\genFreqWithWD\mainpoint.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 21 16 17 18</file>
         </tool>
       </inputs>
     </file>
@@ -102,34 +142,30 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 8</file>
+          <file> 19</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\main.c</name>
+      <name>$PROJ_DIR$\mainpoint.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 15</file>
+          <file> 1</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 16</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 12</file>
+          <file> 0</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 7 5 10 6 9 18 25</file>
+          <file> 20 21 16 17 18 7 14</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 9 10 5 6 7 18 25</file>
+          <file> 20 21 16 17 18 7 14</file>
         </tool>
       </inputs>
     </file>
@@ -140,6 +176,9 @@
     <forcedrebuild>
       <name>[MULTI_TOOL]</name>
       <tool>XLINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
     </forcedrebuild>
   </configuration>
 </project>

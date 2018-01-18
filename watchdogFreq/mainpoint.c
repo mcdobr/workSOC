@@ -18,13 +18,13 @@ int main( void )
   /* seteaza prescalerul cerut la watchdog, init timer1, usart */
   WDTCR |= (1 << WDP2);
   TCCR1B = (1 << CS11) | (1 << CS10);
-  usart_init(BAUD_RATE);
+  //usart_init(BAUD_RATE);
   
   /* printeaza rezultatele de dinainte de reset */
   wd_time *= TIMER1_PRESCALER / CPU_CYCLES_USEC;
   
-  double wd_period = wd_time / WATCHDOG_TIMEOUT_NO_CYCLES;
-  double wd_freq = 1.0;// / wd_period;
+  double wd_period = 1.0 * wd_time / WATCHDOG_TIMEOUT_NO_CYCLES;
+  double wd_freq = 1.0 / wd_period; // in megahertz
   print_double(wd_freq);
   
   
