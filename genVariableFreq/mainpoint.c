@@ -4,6 +4,8 @@
  * de variaţie fiind [1kHz,10kHz]. Factorul de umplere trebuie să rămână la 50%
  */
 
+// oare îmi trebuie un flag gen must_change_freq care sa-l folosesc in while?
+ 
 #include "usart.h"
 
 #define MIN_FREQ 1
@@ -12,6 +14,7 @@
 #define CPU_CYCLES_PER_KHZ 4000
 
 unsigned int freq_khz = 1;
+unsigned char must_change_freq_flag = 0;
 
 #pragma vector=USART_RXC_vect
 __interrupt void usart_rxc_isr()
