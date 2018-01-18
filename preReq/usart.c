@@ -8,10 +8,6 @@ void usart_init(unsigned int baud)
   
   /* Enable rx si tx */
   UCSRB = (1 << RXEN) | (1 << TXEN);
-  
-  /* Seteaza 8 biti de date */
-  UCSRC |= (1 << URSEL) | (1 << UCSZ1) | (1 << UCSZ0);
-  
 }
 
 unsigned char usart_receive()
