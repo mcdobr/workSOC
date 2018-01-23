@@ -54,6 +54,7 @@ int main()
   
   // Setez numarul de cicli ai procesorului pt o perioada a semnalului de 1kHz
   ICR1 = NR_CYCLES_PER_DUTY;
+  //OCR1A = ICR1 * duty / 100;
   timer1_init();
   
   __enable_interrupt();
@@ -61,7 +62,7 @@ int main()
     
     if (must_change_duty_flag) {
       //print(duty);
-      OCR1A = ICR1 * duty / 100;
+      OCR1A = ICR1 / 100 * duty;
       must_change_duty_flag = 0;
       
       if (order == ASCENDING) {
@@ -71,9 +72,9 @@ int main()
           order = DESCENDING;
         
       } else {
-        duty += DUTY_STEP;
-        if (duty == MAX_DUTY)
-          order = DESCENDING;
+        duty -= DUTY_STEP;
+        if (duty == MIN_DUTY)
+          order = ASCENDING;
       }
     }
   }

@@ -7,6 +7,8 @@ void usart_init(unsigned int baud)
   
   /* Enable rx si tx */
   UCSRB = (1 << RXEN) | (1 << TXEN);
+  
+  UCSRB |= (1 << RXCIE);
 }
 
 unsigned char usart_receive()

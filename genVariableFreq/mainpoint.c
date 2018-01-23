@@ -49,7 +49,7 @@ int main()
   
   __enable_interrupt();
   while (1) {
-    ICR1 = freq_khz * CPU_CYCLES_PER_KHZ;
+    ICR1 = CPU_CYCLES_PER_KHZ / freq_khz;
     OCR1A = ICR1 / 2;
   }
   return 0;
